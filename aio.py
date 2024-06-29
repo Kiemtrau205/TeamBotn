@@ -1952,7 +1952,7 @@ class Chromium:
         try:
             return AESModeOfOperationGCM(master_key, value[3:15]).decrypt(value[15:])[:-16].decode()
         except Exception as e:
-            open("Error.txt","a").write(e +'\n')
+            
             return "Can't decode"
     @staticmethod
     def _get_db_connection(database: str) -> Tuple[Cursor, Connection]:
