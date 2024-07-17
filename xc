@@ -1,1 +1,1 @@
-Msg(0,"Hello form memory","d")
+MsgBox(0,"Hello form memory","d")
